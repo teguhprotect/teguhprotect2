@@ -22,27 +22,27 @@ from googletrans import Translator
 import youtube_dl
 #import pyimgflip
 
-cl = LineClient("@gmail.com","polytron11")
+cl = LineClient("bandisubroto983@gmail.com","polytron11")
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-ki = LineClient("@gmail.com","polytron11")
+ki = LineClient("idabolalang@gmail.com","polytron11")
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki,ki.server.CHANNEL_ID['LINE_TIMELINE'])
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-kk = LineClient("@gmail.com","polytron11")
+kk = LineClient("sonetaria575@gmail.com","polytron11")
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk,kk.server.CHANNEL_ID['LINE_TIMELINE'])
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
-kc = LineClient("@gmail.com","polytron11")
-kc.log("Auth Token : " + str(kc.authToken))
-channel3 = LineChannel(kc,kc.server.CHANNEL_ID['LINE_TIMELINE'])
-kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
+#kc = LineClient("@gmail.com","polytron11")
+#kc.log("Auth Token : " + str(kc.authToken))
+#channel3 = LineChannel(kc,kc.server.CHANNEL_ID['LINE_TIMELINE'])
+#kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
-sw = LineClient("@gmail.com","polytron11")
+sw = LineClient("tukijosastro12@gmail.com","polytron11")
 sw.log("Auth Token : " + str(sw.authToken))
 channel4 = LineChannel(sw,sw.server.CHANNEL_ID['LINE_TIMELINE'])
 sw.log("Channel Access Token : " + str(channel4.channelAccessToken))
@@ -52,19 +52,19 @@ print ("\nBOT MULAI BERJALAN......")
 
 poll = LinePoll(cl)
 call = cl
-creator = ["ue7b2c0c3f5d7d250e7c6defd09606600","u6efc0dbb595b3430a340afaf1500bf8b"]
-owner = ["ufd1fc96a20d7cf0a8e6e8dfc117f32be","u6efc0dbb595b3430a340afaf1500bf8b"]
-admin = ["ufd1fc96a20d7cf0a8e6e8dfc117f32be","u6efc0dbb595b3430a340afaf1500bf8b"]
-staff = ["ufd1fc96a20d7cf0a8e6e8dfc117f32be","u6efc0dbb595b3430a340afaf1500bf8b"]
+creator = ["ue7b2c0c3f5d7d250e7c6defd09606600","u6efc0dbb595b3430a340afaf1500bf8b","u1104b4e61b0a215c66baacf1a6ca09a8"]
+owner = ["ufd1fc96a20d7cf0a8e6e8dfc117f32be","u6efc0dbb595b3430a340afaf1500bf8b","u1104b4e61b0a215c66baacf1a6ca09a8"]
+admin = ["ufd1fc96a20d7cf0a8e6e8dfc117f32be","u6efc0dbb595b3430a340afaf1500bf8b","u1104b4e61b0a215c66baacf1a6ca09a8"]
+staff = ["ufd1fc96a20d7cf0a8e6e8dfc117f32be","u6efc0dbb595b3430a340afaf1500bf8b","u1104b4e61b0a215c66baacf1a6ca09a8"]
 lineProfile = cl.getProfile()
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
-Cmid = kc.getProfile().mid
+#Cmid = kc.getProfile().mid
 Zmid = sw.getProfile().mid
-KAC = [cl,ki,kk,kc]
-ABC = [ki,kk,kc]
-Bots = [mid,Amid,Bmid,Cmid,Zmid]
+KAC = [cl,ki,kk,]
+ABC = [ki,kk,cl]
+Bots = [mid,Amid,Bmid,Zmid]
 Saints = admin + staff
 
 protectqr = []
@@ -82,7 +82,7 @@ msg_dict1 = {}
 
 responsename1 = ki.getProfile().displayName
 responsename2 = kk.getProfile().displayName
-responsename3 = kc.getProfile().displayName
+responsename3 = cl.getProfile().displayName
 
 settings = {
     "Picture":False,
